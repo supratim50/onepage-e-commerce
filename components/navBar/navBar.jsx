@@ -7,7 +7,10 @@ const NavBar = () => {
     <section>
       <TopDiscount />
       <div className="bg-color-secondary">
-        <div className="py-md-4 p-3 container d-flex flex-md-row flex-column justify-content-center align-items-center">
+        <div
+          className="py-md-4 p-3 container d-flex flex-md-row flex-column justify-content-center align-items-center"
+          id="navbar"
+        >
           <div className="d-inline-block logo">
             <Link href="">
               <a className="mb-0 sub-heading color-black font-weight-bold text-decoration-none">
