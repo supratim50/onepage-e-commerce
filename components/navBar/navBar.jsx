@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavLink from "../links/catagoriesLink";
 // import Scrollspy from "react-scrollspy";
 
 const NavBar = () => {
@@ -31,30 +32,19 @@ const NavBar = () => {
             items={["products", "about-us", "contact-us"]}
             currentClassName="is-current"
           ></Scrollspy> */}
-            <div className="py-md-4 py-0 nav-link-box ml-md-auto d-flex justify-content-between align-items-center">
-              <a
-                href="#products"
-                className="nav-link p-0 special-text color-black font-weight-bold text-decoration-none"
-              >
-                Product
-              </a>
-              <a
-                href="#about-us"
-                className="nav-link p-0 special-text color-black font-weight-bold text-decoration-none"
-              >
-                About us
-              </a>
-              <a
-                href="#contact-us"
-                className="nav-link p-0 special-text color-black font-weight-bold text-decoration-none"
-              >
-                Contact Us
-              </a>
+            <div className="navlink-box py-md-4 py-0 nav-link-box ml-md-auto d-flex justify-content-between align-items-center">
+              <NavLink key={1} text="Products" active />
+              <NavLink key={2} text="AboutUs" />
+              <NavLink key={3} text="ContactUs" />
+              <NavLink key={4} text="Option1" />
             </div>
             {/* <Scrollspy /> */}
           </div>
         </div>
         <style jsx>{`
+          .sticky-top {
+            top: -1px;
+          }
           .nav-bar {
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
           }
@@ -67,6 +57,12 @@ const NavBar = () => {
             .nav-link:not(:first-child) {
               margin-left: 40px !important;
             }
+          }
+
+          .navlink-box {
+            width: 100%;
+            max-width: 850px;
+            overflow: scroll;
           }
 
            {

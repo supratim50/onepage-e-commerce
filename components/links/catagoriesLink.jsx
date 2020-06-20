@@ -7,7 +7,7 @@ const CatagoriesLink = ({ text, active }) => {
         active ? "color-primary" : "color-black-2"
       }`}
     >
-      <p className="special-text mb-2">{text}</p>
+      <p className="special-text mb-1">{text}</p>
       <p className={`text-paragraph mb-0 ${active ? "" : "hide"}`}>
         <FiTarget />
       </p>
