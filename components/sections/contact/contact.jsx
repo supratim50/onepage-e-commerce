@@ -2,39 +2,64 @@ import PrimaryHeading from "../../heading/primaryHeading";
 import ContactDetails from "../../contactDetails/contactDetails";
 import Input from "../../input/input";
 import Textarea from "../../input/textarea";
+import PrimaryBtn from "../../buttons/primaryButton";
+import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
 const Contact = () => {
   return (
     <section className="section-mt">
-      <div className="container border">
-        <div className="row border">
-          <div className="col-12 col-md-6 border px-0">
-            <PrimaryHeading
-              text="Lets get in touch"
-              classList="text-center text-md-left font-weight-bold mb-5 pb-2 color-secondary"
-            />
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-lg-6 px-2 px-md-0 d-flex justify-content-center align-items-center">
+            <div>
+              <PrimaryHeading
+                text="Lets get in touch"
+                classList="text-center text-lg-left font-weight-bold mb-5 pb-2 color-secondary"
+              />
 
-            <ContactDetails
-              icon="H"
-              text="+91-855-552-1569"
-              classList="mb-4 pb-3"
-            />
-            <ContactDetails
-              icon="H"
-              text="117, Jugipara Rd, Dum Dum, Kolkata, West Bengal 700028"
-              classList="mb-4 pb-3"
-            />
-            <ContactDetails
-              icon="H"
-              text="alma.lawson@example.com"
-              classList="mb-4 pb-3"
-            />
-            <ContactDetails icon="H" text="+91-855-552-1569" />
+              <div className="row">
+                <div className="col-lg-12 col-6 px-0 d-flex justify-content-center justify-content-lg-start">
+                  <ContactDetails
+                    icon={<FiPhone />}
+                    text="+91-855-552-1569"
+                    classList="mb-4 pb-3"
+                  />
+                </div>
+                <div className="col-lg-12 col-6 px-0 d-flex justify-content-center justify-content-lg-start">
+                  <ContactDetails
+                    icon={<FiMapPin />}
+                    text="117, Jugipara Rd, Dum Dum, Kolkata, West Bengal 700028"
+                    classList="mb-4 pb-3"
+                  />
+                </div>
+                <div className="col-lg-12 col-6 px-0 d-flex justify-content-center justify-content-lg-start">
+                  <ContactDetails
+                    icon={<FiMail />}
+                    text="alma.lawson@example.com"
+                    classList="mb-4 pb-3"
+                  />
+                </div>
+                <div className="col-lg-12 col-6 px-0 d-flex justify-content-center justify-content-lg-start">
+                  <ContactDetails
+                    icon={<FiPhone />}
+                    text="+91-855-552-1569"
+                    classList="mb-4 pb-3"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col-12 col-md-6 border px-0">
+          <div className="col-12 col-lg-6 px-0">
             <div className="d-flex justify-content-center">
-              <div className="input-main-box bg-color-secondary rounded-lg p-2 p-md-4">
-                <div className="input-box">
+              <div className="input-main-box bg-color-secondary px-3 py-5 p-md-5">
+                {/* heading */}
+                <div className=" pb-3 mb-4">
+                  <p className="color-black-2 sub-heading text-center mb-0">
+                    We would appreciate some feedback from you
+                  </p>
+                </div>
+                {/* input */}
+                <div className="input-box pb-3 mb-4">
                   <form className="form-signin">
                     <Input
                       type="text"
@@ -55,6 +80,10 @@ const Contact = () => {
                     />
                   </form>
                 </div>
+                {/* button */}
+                <div>
+                  <PrimaryBtn classList="mx-auto">Contact</PrimaryBtn>
+                </div>
               </div>
             </div>
           </div>
@@ -70,6 +99,7 @@ const Contact = () => {
         .input-main-box {
           width: 95% !important;
           max-width: 510px;
+          border-radius: 10px;
         }
       `}</style>
     </section>

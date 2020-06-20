@@ -6,12 +6,12 @@ const NavBar = () => {
   return (
     <section>
       <TopDiscount />
-      <div className="bg-color-secondary">
+      <div className="nav-bar bg-color-secondary p-0 ">
         <div
           className="py-md-4 p-3 container d-flex flex-md-row flex-column justify-content-center align-items-center"
           id="navbar"
         >
-          <div className="d-inline-block logo">
+          <div className="d-inline-block logo navbar-brand m-0">
             <Link href="">
               <a className="mb-0 sub-heading color-black font-weight-bold text-decoration-none">
                 Brand Name
@@ -40,14 +40,23 @@ const NavBar = () => {
         </div>
       </div>
       <style jsx>{`
-        @media screen and (max-width: 767px) {
-          .logo {
-            margin-bottom: 39px !important;
-          }
+        .nav-bar {
+          top: 0;
+          position: sticky !important;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
         }
 
         .nav-link:not(:first-child) {
           margin-left: 60px !important;
+        }
+
+        @media screen and (max-width: 767px) {
+          .logo {
+            margin-bottom: 39px !important;
+          }
+          .nav-link:not(:first-child) {
+            margin-left: 40px !important;
+          }
         }
          {
           /* @media screen and (max-width: 767px) {

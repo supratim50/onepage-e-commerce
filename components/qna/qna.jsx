@@ -26,12 +26,12 @@ const Qna = ({ question, answer }) => {
             <p className="special-text font-weight-bold mb-0">{question}</p>
           </div>
         </div>
-      </div>
-      {/* answer */}
-      <div
-        className={`row answer ${open ? "show" : ""} pb-0 mb-4 pb-md-3 mb-md-4`}
-      >
-        <div className="col-12 col-md-11 offset-0 offset-md-1">
+
+        <div
+          className={`col-12 col-md-11 offset-0 offset-md-1 answer ${
+            open ? "show" : ""
+          } pt-0 mt-4 pt-md-3 mt-md-4 px-0`}
+        >
           <div className="qna-box answer-box p-3 p-md-4 d-inline-block bg-color-secondary">
             <p className="text-paragraph mb-0">{answer}</p>
           </div>
@@ -58,19 +58,22 @@ const Qna = ({ question, answer }) => {
         .show {
           display: block;
           animation-name: open;
-          animation-duration: 0.4s;
+          animation-duration: 1s;
           /* opacity: 1 !important;
           visibility: visible !important; */
         }
 
         @keyframes open {
-          from {
+          0% {
+            /* height: 0; */
+
             opacity: 0;
             visibility: hidden;
           }
-          to {
-            visibility: visible;
+          100% {
+            /* height: 100%; */
             opacity: 1;
+            visibility: visible;
           }
         }
       `}</style>

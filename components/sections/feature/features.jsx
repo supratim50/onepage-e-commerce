@@ -9,19 +9,19 @@ const Fetures = () => {
       <div className="container section-container">
         <PrimaryHeading
           text="Features"
-          classList="text-center text-md-left font-weight-bold mb-5 pb-2"
+          classList="text-center text-lg-left font-weight-bold mb-5 pb-2"
         />
         <div className="row w-100 m-0">
-          <div className="col-6 col-md-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
+          <div className="col-6 col-lg-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
             <Features icon={<FiLock />} title="100% Secure Payments" />
           </div>
-          <div className="col-6 col-md-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
+          <div className="col-6 col-lg-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
             <Features icon={<FiShield />} title="TrustPay" />
           </div>
-          <div className="col-6 col-md-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
+          <div className="col-6 col-lg-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
             <Features icon={<FiShield />} title="HelpCenter" />
           </div>
-          <div className="col-6 col-md-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
+          <div className="col-6 col-lg-3 py-4 py-md-5 features-box d-flex flex-column justify-content-center align-items-center">
             <Features icon={<FiSmartphone />} title="Shop On The Go" />
           </div>
         </div>

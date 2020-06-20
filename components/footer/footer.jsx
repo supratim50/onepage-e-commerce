@@ -1,4 +1,11 @@
-import { FiChevronUp } from "react-icons/fi";
+import Link from "next/link";
+import {
+  FiChevronUp,
+  FiFacebook,
+  FiInstagram,
+  FiTwitter,
+  FiYoutube,
+} from "react-icons/fi";
 import RoundButton from "../buttons/roundBtn";
 
 const Footer = () => {
@@ -19,24 +26,40 @@ const Footer = () => {
         <div className="mb-4 pb-2">
           <ul className="d-flex justify-content-center align-items-center list-unstyled">
             <li>
-              <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
-                H
-              </RoundButton>
+              <Link href="#">
+                <a>
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                    <FiFacebook />
+                  </RoundButton>
+                </a>
+              </Link>
             </li>
             <li>
-              <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
-                H
-              </RoundButton>
+              <Link href="#">
+                <a>
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                    <FiInstagram />
+                  </RoundButton>
+                </a>
+              </Link>
             </li>
             <li>
-              <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
-                H
-              </RoundButton>
+              <Link href="#">
+                <a>
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                    <FiTwitter />
+                  </RoundButton>
+                </a>
+              </Link>
             </li>
             <li>
-              <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
-                H
-              </RoundButton>
+              <Link href="#">
+                <a>
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                    <FiYoutube />
+                  </RoundButton>
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

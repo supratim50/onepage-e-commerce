@@ -27,7 +27,7 @@ const Faq = () => {
       <div className="container">
         <PrimaryHeading
           text="FAQs"
-          classList="text-center text-md-left font-weight-bold mb-5 pb-2"
+          classList="text-center text-lg-left font-weight-bold mb-5 pb-2"
         />
         {qnas.map((qna) => (
           <Qna question={qna.question} answer={qna.answer} />

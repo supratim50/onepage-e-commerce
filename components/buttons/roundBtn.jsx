@@ -3,13 +3,17 @@ import React from "react";
 const RoundBtn = ({ children, onClick, classList }) => {
   return (
     <div
-      className={`rounded-circle d-flex justify-content-center align-items-center ${
+      className={`button rounded-circle d-flex justify-content-center align-items-center ${
         classList ? classList : ""
       }`}
       onClick={onClick && onClick}
     >
       {children}
       <style jsx>{`
+        .button {
+          transition: 0.5s !important;
+        }
+
         .button-md {
           width: 51px !important;
           height: 51px !important;
@@ -36,6 +40,10 @@ const RoundBtn = ({ children, onClick, classList }) => {
             height: 45px !important;
             cursor: pointer;
           }
+        }
+
+        .hover:hover {
+          transform: scale(1.2);
         }
       `}</style>
     </div>

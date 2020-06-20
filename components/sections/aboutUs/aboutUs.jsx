@@ -5,22 +5,11 @@ const AboutUs = () => {
     <section className="section-mt">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6 d-flex justify-content-start align-items-center">
+          <div className="col-12 col-md-6 d-flex justify-content-md-start justify-content-center align-items-center">
             <div className="image-box d-flex justify-content-center align-items-center mb-5 mb-md-0 pb-2 pb-md-0">
               <img
                 className="about-image img-fluid"
                 src="/assets/images/about-img.png"
-                alt="About Image"
-              />
-              {/* background svgs */}
-              <img
-                className="rectangle-svg img-fluid"
-                src="/assets/svgs/rectangle.svg"
-                alt="About Image"
-              />
-              <img
-                className="group-svg img-fluid"
-                src="/assets/svgs/group.svg"
                 alt="About Image"
               />
             </div>
@@ -48,21 +37,17 @@ const AboutUs = () => {
 
       <style jsx>{`
         .image-box {
-          height: 376px !important;
-          width: 442px !important;
+          max-height: 376px !important;
+          max-width: 442px !important;
 
           position: relative;
         }
 
         @media screen and (max-width: 767px) {
           .image-box {
-            height: 285px !important;
+            max-width: none !important;
+            max-height: none !important;
           }
-        }
-
-        .about-image {
-          max-width: 386px !important;
-          max-height: 320px !important;
         }
 
         .rectangle-svg {

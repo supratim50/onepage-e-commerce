@@ -1,6 +1,6 @@
 const Textarea = ({ id, placeholder, classList }) => {
   return (
-    <div className="form-label-group border-bottom">
+    <div className="form-label-group border-bottom mb-0">
       <textarea
         id={id}
         className={`form-control shadow-none border-0 h-auto shadow-sm ${
@@ -30,13 +30,13 @@ const Textarea = ({ id, placeholder, classList }) => {
 
         .form-label-group > textarea,
         .form-label-group > label {
-          padding: 1rem;
+          padding: 1rem 0;
         }
 
         @media screen and (min-width: 400px) {
           .form-label-group > textarea,
           .form-label-group > label {
-            padding: 1.5rem;
+            padding: 1.5rem 0;
           }
         }
 

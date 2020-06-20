@@ -30,13 +30,13 @@ const Input = ({ type, id, placeholder, error, classList }) => {
 
           .form-label-group > input,
           .form-label-group > label {
-            padding: 1rem;
+            padding: 1rem 0;
           }
 
           @media screen and (min-width: 400px) {
             .form-label-group > input,
             .form-label-group > label {
-              padding: 1.5rem;
+              padding: 1.5rem 0;
             }
           }
 

@@ -6,6 +6,7 @@ import CatagoriesLink from "../../links/catagoriesLink";
 import Card from "../../cards/card";
 import PrimaryButton from "../../buttons/primaryButton";
 import PrimaryHeading from "../../heading/primaryHeading";
+import Quantity from "../../quantity/quantity";
 
 const SmallImage = ({ imgUrl }) => {
   return (
@@ -35,18 +36,22 @@ const Products = () => {
 
   const productDetails = [
     {
+      id: 1,
       image: "/assets/images/product-img.png",
       heading: "Red Sports Sneaker",
     },
     {
+      id: 2,
       image: "/assets/images/product-img.png",
       heading: "Red Sports Sneaker",
     },
     {
+      id: 3,
       image: "/assets/images/product-img.png",
       heading: "Red Sports Sneaker",
     },
     {
+      id: 4,
       image: "/assets/images/product-img.png",
       heading: "Red Sports Sneaker",
     },
@@ -57,14 +62,18 @@ const Products = () => {
       <div className="container">
         <PrimaryHeading
           text="Products"
-          classList="text-center text-md-left font-weight-bold mb-5 pb-2"
+          classList="text-center text-lg-left font-weight-bold mb-5 pb-2"
         />
         {/* catagories */}
         <div className="d-flex justify-content-center align-items-center mb-5 pb-4">
-          <CatagoriesLink text="Mens" active />
-          <CatagoriesLink text="womens" />
-          <CatagoriesLink text="Kids" />
-          <CatagoriesLink text="Sportswear" />
+          <div className="catagory-box d-flex justify-content-start align-items-center">
+            <CatagoriesLink text="Mens" active />
+            <CatagoriesLink text="womens" />
+            <CatagoriesLink text="Kids" />
+            <CatagoriesLink text="Sportswear" />
+            <CatagoriesLink text="Sportswear" />
+            <CatagoriesLink text="Sportswear" />
+          </div>
         </div>
         {/* product card */}
         <div className="row">
@@ -106,7 +115,7 @@ const Products = () => {
               {/* product images */}
               <div className="d-flex justify-content-between align-items-center pt-md-3">
                 {productDetails.map((product) => (
-                  <SmallImage imgUrl={product.image} />
+                  <SmallImage key={product.id} imgUrl={product.image} />
                 ))}
               </div>
             </div>
@@ -125,6 +134,11 @@ const Products = () => {
               </div>
               {/* price */}
               <div className="mt-auto">
+                {/* quantity */}
+                <p className="special-text color-black-2 mb-4">Quantity</p>
+                <div className="mb-4 pb-3 pb-md-0 mb-md-5">
+                  <Quantity />
+                </div>
                 {/* price */}
                 <div className="d-flex justify-content-between align-items-end mb-3">
                   <div className="sub-heading mb-0 font-weight-bold d-flex align-items-center">
@@ -135,7 +149,7 @@ const Products = () => {
                   <p className="special-text color-primary mb-0">20% off</p>
                 </div>
                 {/* button */}
-                <PrimaryButton classList="py-3">Shop Now</PrimaryButton>
+                <PrimaryButton classList="py-3 w-full">Shop Now</PrimaryButton>
               </div>
             </div>
           </div>
@@ -149,6 +163,10 @@ const Products = () => {
       </div>
       {/* ======================= show details ============================ */}
       <style jsx>{`
+        .catagory-box {
+          max-width: 100%;
+          overflow: scroll !important;
+        }
         /* show details */
         .detail-background {
           width: 100vw !important;
