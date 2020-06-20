@@ -21,6 +21,12 @@ const ContactDetails = ({ text, icon, classList }) => {
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
         }
 
+        @media screen and (max-width: 1024px) {
+          .contact-box {
+            max-width: 390px;
+          }
+        }
+
         @media screen and (max-width: 992px) {
           .contact-box {
             display: none !important;

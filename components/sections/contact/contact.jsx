@@ -7,7 +7,7 @@ import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <section className="section-mt">
+    <section className="section-mt" id="contact-us">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 px-2 px-md-0 d-flex justify-content-center align-items-center">

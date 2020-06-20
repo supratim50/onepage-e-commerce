@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import TopDiscount from "../components/topDiscount/topDiscount";
 import NavBar from "../components/navBar/navBar";
 import Carousel from "../components/carousel/carousel";
 import AboutUs from "../components/sections/aboutUs/aboutUs";
@@ -12,6 +13,7 @@ import Footer from "../components/footer/footer";
 export default function Home() {
   return (
     <>
+      <TopDiscount />
       <NavBar />
       <Carousel />
       <AboutUs />

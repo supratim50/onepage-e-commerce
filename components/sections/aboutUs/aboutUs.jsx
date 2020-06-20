@@ -2,7 +2,7 @@ import PrimaryHeading from "../../heading/primaryHeading";
 
 const AboutUs = () => {
   return (
-    <section className="section-mt">
+    <section className="section-mt" id="about-us">
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 d-flex justify-content-md-start justify-content-center align-items-center">
