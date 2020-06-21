@@ -1,6 +1,6 @@
 import { FiTarget } from "react-icons/fi";
 
-const CatagoriesLink = ({ text, active }) => {
+const CatagoriesLink = ({ text, active, dotNone }) => {
   return (
     <div
       className={`d-flex flex-column justify-content-center align-items-center font-weight-bold mx-2 mx-md-3 px-2 px-md-4 ${
@@ -8,7 +8,11 @@ const CatagoriesLink = ({ text, active }) => {
       }`}
     >
       <p className="special-text mb-1">{text}</p>
-      <p className={`dot mb-0 ${active ? "" : "hide"}`}>
+      <p
+        className={`dot mb-0 ${dotNone ? "dot-none" : ""} ${
+          active ? "" : "hide"
+        }`}
+      >
         <FiTarget />
       </p>
 
@@ -19,6 +23,10 @@ const CatagoriesLink = ({ text, active }) => {
 
         .dot {
           font-size: 9px !important;
+        }
+
+        .dot-none {
+          display: none !important;
         }
       `}</style>
     </div>

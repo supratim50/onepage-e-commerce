@@ -17,7 +17,7 @@ const Carousel = () => {
             </PrimaryBtn>
           </div>
         </div>
-        <div className="col-12 col-lg-6 d-flex align-items-center mt-5 mt-md-0">
+        <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-lg-0">
           <div className="image-box p-2 bg-color-primary">
             <img
               src="/assets/images/intro.png"
@@ -36,7 +36,7 @@ const Carousel = () => {
         .intro-box {
           max-width: 375px;
         }
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1100px) {
           .carousel-box {
             padding: 70px 25px;
           }

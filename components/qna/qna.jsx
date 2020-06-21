@@ -7,7 +7,6 @@ const Qna = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
 
   const openAnswer = (e) => setOpen(!open);
-  console.log(open);
 
   return (
     <div>
@@ -22,7 +21,10 @@ const Qna = ({ question, answer }) => {
           </RoundBtn>
         </div>
         <div className="col-10 col-md-11 px-0">
-          <div className="question-box qna-box px-3 py-2 px-md-4 py-md-3 ml-auto ml-md-0 d-inline-block bg-color-secondary">
+          <div
+            className="question-box qna-box px-3 py-2 px-md-4 py-md-3 ml-auto ml-md-0 d-inline-block bg-color-secondary"
+            onClick={openAnswer}
+          >
             <p className="special-text font-weight-bold mb-0">{question}</p>
           </div>
         </div>
@@ -44,6 +46,7 @@ const Qna = ({ question, answer }) => {
         }
         .question-box {
           border-radius: 25px;
+          cursor: pointer;
         }
         .answer-box {
           border-radius: 10px;

@@ -10,6 +10,13 @@ const PrimaryButton = ({ classList, children }) => {
         .button {
           padding: 14px 49px;
           letter-spacing: 0.11em;
+          transition: 0.5s;
+        }
+
+        .button:hover {
+          background-color: #ffb800 !important;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+          color: #121212 !important;
         }
         .w-full {
           width: 100% !important;

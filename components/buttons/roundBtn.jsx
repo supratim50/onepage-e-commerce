@@ -12,6 +12,7 @@ const RoundBtn = ({ children, onClick, classList }) => {
       <style jsx>{`
         .button {
           transition: 0.5s !important;
+          cursor: pointer;
         }
 
         .button-md {

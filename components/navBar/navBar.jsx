@@ -33,10 +33,10 @@ const NavBar = () => {
             currentClassName="is-current"
           ></Scrollspy> */}
             <div className="navlink-box py-md-4 py-0 nav-link-box ml-md-auto d-flex justify-content-between align-items-center">
-              <NavLink key={1} text="Products" active />
-              <NavLink key={2} text="AboutUs" />
-              <NavLink key={3} text="ContactUs" />
-              <NavLink key={4} text="Option1" />
+              <NavLink key={1} text="Products" dotNone active />
+              <NavLink key={2} text="AboutUs" dotNone />
+              <NavLink key={3} text="ContactUs" dotNone />
+              <NavLink key={4} text="Option1" dotNone />
             </div>
             {/* <Scrollspy /> */}
           </div>
