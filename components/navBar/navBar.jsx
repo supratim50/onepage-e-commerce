@@ -13,12 +13,9 @@ const NavBar = () => {
         </Link>
       </div>
 
-      <section className="sticky-top">
+      <section className="sticky-top" id="nav-bar">
         <div className="nav-bar bg-color-secondary p-0">
-          <div
-            className="py-3 py-md-0 px-3 container d-flex flex-md-row flex-column justify-content-center align-items-center"
-            id="navbar"
-          >
+          <div className="py-3 py-md-0 px-3 container d-flex flex-md-row flex-column justify-content-center align-items-center">
             <div className="d-md-inline-block d-none">
               <Link href="">
                 <a className="mb-0 sub-heading color-black font-weight-bold text-decoration-none">

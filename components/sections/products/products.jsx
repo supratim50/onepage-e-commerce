@@ -107,7 +107,7 @@ const Products = () => {
               <div className="product-img-box rounded-lg overflow-hidden w-100 mb-4">
                 <img
                   className="product-img"
-                  src="/assets/images/product-img.png"
+                  src="/assets/images/buddha.jpg"
                   alt="Product Image"
                 />
               </div>
@@ -214,7 +214,7 @@ const Products = () => {
         }
 
         .product-img {
-          width: 100% !important;
+          max-width: 100% !important;
           max-height: 400px !important;
           object-fit: cover;
         }

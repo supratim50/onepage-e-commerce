@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <section className="section-mt">
       <div className="text-center">
-        <a href="#navbar" className="text-decoration-none">
+        <a href="#nav-bar" className="text-decoration-none">
           <div>
             <i className="mb-4 text-paragraph color-black-2">
               <FiChevronUp />
