@@ -97,3 +97,10 @@ body {
     margin-top: 100px !important;
   }
 }
+
+/* ================================= hover =============================== */
+
+/* contact form  */
+.contact-details-box:hover .round-hover {
+  transform: rotate(360deg) !important;
+}

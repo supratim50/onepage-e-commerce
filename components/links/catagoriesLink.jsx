@@ -8,13 +8,17 @@ const CatagoriesLink = ({ text, active }) => {
       }`}
     >
       <p className="special-text mb-1">{text}</p>
-      <p className={`text-paragraph mb-0 ${active ? "" : "hide"}`}>
+      <p className={`dot mb-0 ${active ? "" : "hide"}`}>
         <FiTarget />
       </p>
 
       <style jsx>{`
         .hide {
           opacity: 0 !important;
+        }
+
+        .dot {
+          font-size: 9px !important;
         }
       `}</style>
     </div>

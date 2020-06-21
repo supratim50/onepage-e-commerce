@@ -58,11 +58,12 @@ const NavBar = () => {
               margin-left: 40px !important;
             }
           }
-
-          .navlink-box {
-            width: 100%;
-            max-width: 850px;
-            overflow: scroll;
+          @media screen and (max-width: 992px) {
+            .navlink-box {
+              width: 100%;
+              max-width: 550px;
+              overflow: scroll;
+            }
           }
 
            {

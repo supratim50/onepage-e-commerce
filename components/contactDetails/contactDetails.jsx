@@ -3,11 +3,11 @@ import RoundButton from "../buttons/roundBtn";
 const ContactDetails = ({ text, icon, classList }) => {
   return (
     <div
-      className={`d-flex justify-content-start align-items-center ${
+      className={`contact-details-box d-flex justify-content-start align-items-center ${
         classList ? classList : ""
       }`}
     >
-      <RoundButton classList="button-lg bg-color-primary sub-heading mr-md-4">
+      <RoundButton classList="button-lg bg-color-primary sub-heading mr-md-4 round-hover">
         {icon}
       </RoundButton>
       <div className="contact-box px-3 py-2 px-md-4 py-md-3 d-inline-block bg-color-secondary">
