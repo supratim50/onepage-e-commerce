@@ -67,20 +67,19 @@ const Products = () => {
         {/* catagories */}
         <div className="d-flex justify-content-center align-items-center mb-5 pb-4">
           <div className="catagory-box d-flex justify-content-start align-items-center">
-            <CatagoriesLink key="1" text="Mens" active />
-            <CatagoriesLink key="2" text="womens" />
-            <CatagoriesLink key="3" text="Kids" />
-            <CatagoriesLink key="4" text="Sportswear" />
-            <CatagoriesLink key="5" text="Sportswear" />
-            <CatagoriesLink key="6" text="Sportswear" />
+            <CatagoriesLink key={1} text="Mens" active />
+            <CatagoriesLink key={2} text="womens" />
+            <CatagoriesLink key={3} text="Kids" />
+            <CatagoriesLink key={4} text="Sportswear" />
+            <CatagoriesLink key={5} text="Sportswear" />
+            <CatagoriesLink key={6} text="Sportswear" />
           </div>
         </div>
         {/* product card */}
         <div className="row">
           {productDetails.map((product) => (
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" key={product.id}>
               <Card
-                key={product.id}
                 image={product.image}
                 heading={product.heading}
                 onClick={showDetails}

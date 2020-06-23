@@ -9,6 +9,21 @@ import {
 import RoundButton from "../buttons/roundBtn";
 
 const Footer = () => {
+  const mouseOver = (e) => {
+    const target = e.target;
+    console.log(target);
+
+    if (target.getAttribute("class") == "footer-icon") {
+      // check if it is img
+      var li = target;
+      console.log(li);
+      var prevLi = li.previousElementSibling;
+      if (prevLi) {
+        prevLi.classList.add("prev");
+        console.log(prevLi);
+      }
+    }
+  };
   return (
     <section className="section-mt">
       <div className="text-center">
@@ -23,39 +38,39 @@ const Footer = () => {
           </div>
         </a>
 
-        <div className="mb-4 pb-2">
+        <div className="footer-icon-box mb-4 pb-2" onMouseOver={mouseOver}>
           <ul className="d-flex justify-content-center align-items-center list-unstyled">
-            <li>
+            <li className="footer-icon">
               <Link href="#">
                 <a>
-                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
                     <FiFacebook />
                   </RoundButton>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className="footer-icon">
               <Link href="#">
                 <a>
-                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
                     <FiInstagram />
                   </RoundButton>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className="footer-icon">
               <Link href="#">
                 <a>
-                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
                     <FiTwitter />
                   </RoundButton>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className="footer-icon">
               <Link href="#">
                 <a>
-                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3 hover">
+                  <RoundButton classList="sub-heading button-lg bg-color-primary color-black mx-3">
                     <FiYoutube />
                   </RoundButton>
                 </a>

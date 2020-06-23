@@ -8,6 +8,7 @@ import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 const Contact = () => {
   return (
     <section className="section-mt" id="contact-us">
+      <div className="layer"></div>
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 px-2 px-md-0 d-flex justify-content-center align-items-center">
@@ -92,8 +93,25 @@ const Contact = () => {
       <style jsx>{`
         section {
           padding: 77px 0 !important;
-          background-image: url(/assets/images/contact.png);
+          background-image: linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url(/assets/images/buddha.jpg);
           background-size: cover;
+        }
+         {
+          /* .layer {
+          position: absolute !important;
+          margin-top: -77px;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+        } */
+        }
+        #contact-us {
+          position: relative;
         }
 
         .input-main-box {
